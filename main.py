@@ -15,6 +15,7 @@ def main() -> None:
             reminder_at=datetime(2026, 10, 1, 18, 30, tzinfo=UTC),
         )
 
+        print("Created task:")
         print(task)
 
     except InvalidTaskError as error:
