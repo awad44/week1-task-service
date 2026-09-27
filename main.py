@@ -1,11 +1,19 @@
 from datetime import UTC, datetime
-
+import os
+from dotenv import load_dotenv
 
 from task_service.exceptions import InvalidTaskError
 from task_service.models import Task
 
+load_dotenv()
+
 
 def main() -> None:
+    app_name = os.getenv("APP_NAME", "Task Service")
+    app_env = os.getenv("APP_ENV", "development")
+
+    print(f"{app_name} - {app_env}")
+
     try:
         task = Task(
             id=1,
@@ -16,8 +24,6 @@ def main() -> None:
             reminder_at=datetime(2026, 10, 1, 18, 30, tzinfo=UTC),
         )
 
-        numbers = [1, 2, 3]
-        print(numbers)
         print("Created task:")
         print(task)
 
