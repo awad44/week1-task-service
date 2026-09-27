@@ -1,4 +1,4 @@
-# Week 1 Task Service
+# Python Week 1 Task Service
 
 A small typed Python task service created as part of the NERUOS Full-Stack Software Engineering Internship Week 1 practice.
 
