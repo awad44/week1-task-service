@@ -24,6 +24,17 @@ Each task contains:
 - `completed`
 - `reminder_at`
 
+
+## Technical Decisions
+
+- Used `dataclass` for the Task model to keep the data model simple and typed.
+- Used in-memory storage for Week 1 because database persistence is outside this week's scope.
+- Used timezone-aware datetime values for task reminders.
+- Used `.env` for environment-specific configuration.
+- Used Ruff, Black, and pre-commit to enforce code quality.
+- Kept task business logic inside `TaskService` instead of `main.py`.
+
+
 ## Project Setup
 
 ### 1. Clone the repository
