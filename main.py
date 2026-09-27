@@ -15,6 +15,8 @@ def main() -> None:
             reminder_at=datetime(2026, 10, 1, 18, 30, tzinfo=UTC),
         )
 
+        numbers = [1, 2, 3]
+        print(numbers)
         print("Created task:")
         print(task)
 
