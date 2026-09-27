@@ -1,0 +1,11 @@
+[project]
+name = "week1-task-service"
+version = "0.1.0"
+description = "A small typed Python task service for Week 1 internship practice"
+requires-python = ">=3.11"
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88

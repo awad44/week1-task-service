@@ -21,6 +21,4 @@ class Task:
             raise InvalidTaskError("Task title cannot be empty")
 
         if self.priority not in {"low", "medium", "high"}:
-            raise InvalidTaskError(
-                "Priority must be low, medium, or high"
-            )
+            raise InvalidTaskError("Priority must be low, medium, or high")

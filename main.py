@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import UTC, datetime
 
 from task_service.exceptions import InvalidTaskError
 from task_service.models import Task
@@ -12,7 +12,7 @@ def main() -> None:
             description="Complete Python foundations",
             priority="high",
             completed=False,
-            reminder_at=datetime(2026, 10, 1, 18, 30),
+            reminder_at=datetime(2026, 10, 1, 18, 30, tzinfo=UTC),
         )
 
         print(task)
