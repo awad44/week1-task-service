@@ -11,6 +11,7 @@ A small typed Python task service created as part of the NERUOS Full-Stack Softw
 - Use environment variables for configuration
 - Enforce formatting and linting with Black and Ruff
 - Run automated quality checks with pre-commit
+- Support timezone-aware task reminders
 
 ## Task Fields
 
